@@ -1,9 +1,10 @@
 import React from "react"
-import { useState } from "react"
+import { useState, useRef } from "react"
 import "./Accordion.css"
 
 function Accordion({ title, content }) {
   const [active, setActive] = useState(false)
+
   const handleToggleAccordion = () => {
     setActive(!active)
   }
